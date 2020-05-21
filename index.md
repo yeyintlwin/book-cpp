@@ -117,6 +117,8 @@ int main()
 | do | long | struct | wchar_t |
 | double | mutable | switch | while |
 | dynamic_cast | namespace | templete |
+
+
 တို့ဖြစ်ပါတယ်။
 
 > နာမည်တွေပေးရာမှာ variable, class, function, etc,... စတာတွေကို ပေးတာပါ။ ပေးပုံပေးနည်း styles တွေရှိပါတယ်။ ကြိုက်သလိုရေးလို့ရနိုင်ပေမဲ့ ဖတ်ရလွယ်အောင် တစ်ခုကို style တစ်မျိုးနဲ့ပေးသင့်ပါတယ်။ 
