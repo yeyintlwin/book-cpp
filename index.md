@@ -1,142 +1,124 @@
-It's very easy to make some world **bold** and the other words *italic* with Markdown. You can even [link to Google!](http://google.com)
+# C++
+## Hello World
+_example_0.0.cpp_ နာမည်နဲ့ file တစ်ခုဖန်တီးပြီး အောက်ပါ code များထည့်ပါ။
+```cpp
+// Hello World program.
+#include <iostream>
 
-Sometimes you want numbered list:
+int main()
+{
 
-1. One
-2. Two
-3. Three
+    std::cout << "Hello, World!" << std::endl;
 
-Sometimes you want bullet points:
-
-* Start a line with a start
-* Profit!
-
-Alternatively,
-
-- Dashes work just as well
-- And if you have sub point, put two space before the dash or star:
-  - Like this
-  - And this
-
-If you want to embed images, this is how to do it:
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
-
-# Structured documents
-
-Sometimes it's was useful to have different levels of headings to structure your documents. Start line with a `#` to create headings. Multiple `##` in a row denote simpler heading sizes.
-
-### This is a third-tier heading
-
-You can use one `#` all the way up to `######` six for different heading size.
-
-If you'd like to quote someone, use the > character before the line:
-
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
-
-There are many different ways to style to code with GitHub's markdown. If you have inline code blocks, wrap them in backticks: `var example = true`. If you've got a longer block of code, you can indent with four space:
-
-    if (isAwesome){
-      return true
-    }
-
-GitHub also supports something called code fencing, which allows for multiple lines without indentation:
-
-```
-if (isAwesome){
-  return true
+    return 0;
 }
 ```
+Terminal မှာ `g++ example_0.0.cpp` လို့ရိုက််ထည်းပြီး compile လုပ်လိုက်ပါ၊ _a.out_ ဆိုတဲ့ file တစ်ခု လက်ရှိ directory အောက်မှာ တိုးလာတာ တွေ့ရပါလိမ့်မယ်။ ထို့နောက် terminal မှာ `./a.out` လို့ရိုက်ပြီး run လိုက်လျှင် __Hello, World!__ ဆိုတဲ့ စာသား ပေါ်လာပါလိမ့်မယ်။
 
-And  if you like to use syntax highlighting, include the language:
+### မှတ်ချက် (comment) များရေးသားခြင်း
+eg 0.0 ရဲ့ ပထမစာကြောင်းက comment ပါ။ သူက program ကိုအကျိုးသက်ရောက်မှု မရှိပါဘူး။ 
 
-```javascript
-if (isAwesome){
-  return true
-}
+နောင်တစ်ချိန်မှာ ကိုယ်က သော်၎င်း အခြားသူတစ်ယောက်က သော်၎င်း မိမိရေးခဲ့တဲ့ program ကိုဖတ်ရာမှာ လွယ်ကူလျှင်မြန်စွာ နားလည်ဖို့ အတွက် comment များကို ရေးသားရပါတယ်။
+
+single-line နဲ့ multi-line ဆိုပြီး comment ရေးသားနည်း (၂) နည်းရှိပါတယ်၊ single-line က ယခု ရေးသာထားတဲ့နည်းပါ၊ `//` (double slash) ရဲ့နောက်မှာ ရေးရပြီး မှတ်ချက် (၁) ကြောင်းထက်ပိုရေးလို့ မရပါဘူး။ multi-line က `/*` နဲ့ `*/` ကြားမှာ စာကြောင်းရေများများ ရေးလို့ရပါတယ်။ 
+
+```cpp
+/*
+    This is an example of multi-line comment 
+    which can be write severial comments.
+*/
 ```
 
-GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with a @ symbol: Hay @kneath — love your sweater!
+### Preprocessing Directive
+```cpp 
+#include <iostream>
+```
+iostream ဆိုတဲ့ header file ကို လက်ရှိ program ထဲသို့ တစ်ပါတည်း compile လုပ်စဉ် ရောထည့်ပေးပါလို့ compiler ကိုအမိန့်ပေးလိုက်တာပါ။ header file ဆိုတာကလည်း program file ပါပဲ၊ ဒီလိုရေးသားလိုက်ခြင်းအားဖြင့် header file ထဲက လုပ်ဆောင်ချက်များကို ခေါ်ယူသုံးစွဲလို့ရသွားပါတယ်။ 
 
-But I have to admit, tasks lists are my favorite:
+C++ ရဲ့ library ထဲက built-in header file တွေကို ခေါ်ယူလိုလျှင် greater than `<` နဲ့ less than signs `>` နှစ်ခုကြားမှာ ထက်ပါအတိုင်း ရေးရပါတယ်။ အခြား thirdparty နဲ့ လက်ရှိ directory ထဲမှာရှိတဲ့ header file တွေကို ခေါ်ယူလိုလျှင်တော့ double quotes `"` နှစ်ကြားမှာ ရေးသားရပါတယ်။ ဥပမာ - `#include "myheader.h"`။
 
-- [x] This is a complete item
-- [ ] This is an incomplete item
+### Main Function
 
-When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It work in Pull Requests, too!
+```cpp
+int main()
+{
 
-And, of course emoji!
+    // Statements
+    // ...
+    // ...
 
-# This is an `<h1>` tag
-## This is an `<h2>` tag
-###### This is an `<h6>` tag
-
-*This text will be italic* <br>
-_This text will also be italic_
-
-**This text will be bold** <br>
-__This text will also be bold__
-
-
-_You **can** combine them_
-
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
-
-1. Item 1
-1. Item 2
-1. Item 3
-  1. Item 3a
-  1. Item 3b
-
-![GitHub Logo](/images/logo.png)
-
-[GitHub](http://github.com)
-
-As Kanye West said:
-> We're living the future so
-> the present here is our past.
-
-I think you should use an `<addr>` element here instead.
-
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div: '#foo'})
-  }
+    return 0;
 }
 ```
+C++ မှာ ကျွန်ုပ်တို့ရေး မည့် code statement တွေကို main function ရဲ့ code block အစဖြစ်တဲ့ left brace `{` ကနေစပြီး တစ်ကြောင်းခြင်း ဖြေရှင်းသွားမှာဖြစ်ပါတယ်။ right brace `}` ရောက်တဲ့အခါမှာ အကုန် ဖြေရှင်းပြီးဖြစ်သည်။ ထို bracket နှစ်ခုကြားကို code block တစ်ခုလို့ခေါ်ပါတယ်။
 
-    function fancyAlert(arg) {
-      if(arg) {
-        $.facebox({div: '#foo'})
-      }
-    }
+`return 0;` ကတော့ main function ကိုခေါ်ထားတဲ့ operating system ကို သုညဆိုတဲ့ တန်ဖိုးကိုပြန်ပေးပြီး program ကို အဆုံးသတ် လိုက်မှာဖြစ်ပါတယ်။
 
-    def foo():
-        if not bar:
-            return True
+```cpp
+std::cout << "Hello, World!" << std::endl;
+```
+Hello, World! ဆိုတဲ့ စာသားကို ဒီ statement ထုတ်ပေးတာပါ။ 
+- std ဆိုတာက cout function ရှိနေတဲ့ class ဖြစ်ပါတယ်။ 
+- cout ဆိုတာက program ကို output ထုတ်ပေးမည့် လုပ်ဆောင်ချက် တစ်ခု ဖြစ်ပါတယ်။ သူ့ကို iostream ဆိုတဲ့ header ထဲကခေါ်ယူထားခဲ့တာပါ။ 
+- `<<` ကို steam insertion operator လို့ခေါ်ပြီး နောက်က စာသားတွေကို cout သို့ပေးပြီး screen မှာပြသပေးဖို့ဖြစ်ပါတယ်။ 
+- endl ကတော့ စာကြောင်း နောက်တစ်ကြာင်း ဆင်းပေးဖို့ပါ၊ `'\n'`နဲ့ တူပြီး သူကတော့ bundle ကို refrash လုပ်ပေးပါသေးတယ်။ သူလည်းပဲ std class ထဲကပါ။
+- statement တစ်ကြောင်းဆုံးတိုင်း `;` semicolon ပိတ်ပေးရပါတယ်။ 
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+> semicolon မေ့ကျန်ရင် error တက်မှာပါ။
 
-First Header | Second Header
--------------|--------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+## Identifiers
+_example_0.1.cpp_
+```cpp
+// Adding the two numbers.
+#include <iostream>
 
+using namespace std;
 
-16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
-mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+int main()
+{
+    int first_num;
+    int second_num;
+    int total;
 
+    first_num = 2;
+    second_num = 3;
+    total = first_num + second_num;
 
-#1
-mojombo#1
-mojombo/github-flavored-markdown#1
+    cout << "Total = " << total << endl;
+    return 0;
+}
+```
+ဒီ program က ကိန်းပြည့်နှစ်လုံးကို ပေါင်းပေးတာပါ။ program ထဲရှိ first_num၊ second_num နှင့် total ဆိုတာ variable name တွေဖြစ်ပါတယ်။ အချက်အလက် တန်ဖိုးတွေ မှတ်ဉာဏ်မှာ ခဏသိမ်းပေးဖို့အတွက် နာမည်လေးတွေ တပ်ပေးရပါတယ်။ ဒီလိုနာမည်လေးတွေကို identifier လို့ခေါ်ပါတယ်။
 
+နာမည်တွေပေးရာမှာ ကန့်သတ်ချက် အချို့ရှိပါတယ်။ ထိုကန့်သတ်ချက်မှာ အောက်ပါအတိုင်းဖြစ်ပါတယ်။
+
+- နာမည်ပေးရာမှာ a ကနေ z၊ A ကနေ Z၊ 0 ကနေ 9 နှင့် _ (underscore character) စတဲ့ စာလုံးတွေပဲ ပါဝင်လို့ရမှာပါ။ အခြား စာလုံးဆိုရင် space တစ်ချက်တောင် ခြားပေးလို့မရပါဘူး။
+- 0-9 ကိန်းဂဏန်းတွေနဲ့ စရေးလို့မရပါဘူး။
+- ကြိုက်သလောက် ရှည်ရှည်ရေးလို့ရပေမဲ့ ရှေဆုံးစာလုံး (၃၂) အကျုံးဝင်ပါတယ်။ (၁) လုံးတည်းပေးလည်း ရပါတယ်။
+- C++ က case sensitive ဖြစ်လို့ ဥပမာ- MyName, myName နှင့် myname တို့က တစ်ခုနှင့်တစ်ခု မတူပါဘူး။
+- C++ သီးသန့် သတ်မှတ်ပေးထားတဲ့ စကားလုံး (keyword) တွေကိုသုံးလို့မရပါဘူး။ ထိုစကားလုံးများမှာ-
+
+|||||
+-|-|-|-
+asm|else|new|this
+auto|enum|operator|throw
+bool|explicit|private|true
+break|export|protected|try
+case|extern|public|typedef
+catch|false|register|typeid
+char|float|reinterpret_cast|typename
+class|for|return|union
+const|friend|short|unsigned
+const_cast|goto|signed|using
+continue|if|sizeof|virtual
+default|inline|static|void
+delete|int|static_cast|volatie
+do|long|struct|wchar_t
+double|mutable|switch|while
+dynamic_cast|namespace|templete
+တို့ဖြစ်ပါတယ်။
+
+> နာမည်တွေပေးရာမှာ variable, class, function, etc,... စတာတွေကို ပေးတာပါ။ ပေးပုံပေးနည်း styles တွေရှိပါတယ်။ ကြိုက်သလိုရေးလို့ရနိုင်ပေမဲ့ ဖတ်ရလွယ်အောင် တစ်ခုကို style တစ်မျိုးနဲ့ပေးသင့်ပါတယ်။ 
+
+## Data Types
+![](drawing.svg)
