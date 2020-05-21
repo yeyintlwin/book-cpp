@@ -98,24 +98,23 @@ int main()
 - C++ က case sensitive ဖြစ်လို့ ဥပမာ- MyName, myName နှင့် myname တို့က တစ်ခုနှင့်တစ်ခု မတူပါဘူး။
 - C++ သီးသန့် သတ်မှတ်ပေးထားတဲ့ စကားလုံး (keyword) တွေကိုသုံးလို့မရပါဘူး။ ထိုစကားလုံးများမှာ-
 
-|a|b|d|e|
--|-|-|-
-asm|else|new|this
-auto|enum|operator|throw
-bool|explicit|private|true
-break|export|protected|try
-case|extern|public|typedef
-catch|false|register|typeid
-char|float|reinterpret_cast|typename
-class|for|return|union
-const|friend|short|unsigned
-const_cast|goto|signed|using
-continue|if|sizeof|virtual
-default|inline|static|void
-delete|int|static_cast|volatie
-do|long|struct|wchar_t
-double|mutable|switch|while
-dynamic_cast|namespace|templete
+| :---: | :---: | :---: | :---: |
+| asm | else | new | this |
+| auto | enum | operator | throw |
+| bool | explicit | private | true |
+| break | export | protected | try |
+| case | extern | public | typedef |
+| catch | false | register | typeid |
+| char | float | reinterpret_cast | typename |
+| lass | for | return | union |
+| const | friend | short | unsigned |
+| const_cast | goto | signed | using |
+| continue | if | sizeof | virtual |
+| default | inline | static | void |
+| delete | int | static_cast | volatie |
+| do | long | struct | wchar_t |
+| double | mutable | switch | while |
+| dynamic_cast | namespace | templete |
 တို့ဖြစ်ပါတယ်။
 
 > နာမည်တွေပေးရာမှာ variable, class, function, etc,... စတာတွေကို ပေးတာပါ။ ပေးပုံပေးနည်း styles တွေရှိပါတယ်။ ကြိုက်သလိုရေးလို့ရနိုင်ပေမဲ့ ဖတ်ရလွယ်အောင် တစ်ခုကို style တစ်မျိုးနဲ့ပေးသင့်ပါတယ်။ 
