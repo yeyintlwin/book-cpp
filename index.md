@@ -98,7 +98,7 @@ int main()
 - C++ က case sensitive ဖြစ်လို့ ဥပမာ- MyName, myName နှင့် myname တို့က တစ်ခုနှင့်တစ်ခု မတူပါဘူး။
 - C++ သီးသန့် သတ်မှတ်ပေးထားတဲ့ စကားလုံး (keyword) တွေကိုသုံးလို့မရပါဘူး။ ထိုစကားလုံးများမှာ-
 
-|||||
+| | | | |
 -|-|-|-
 asm|else|new|this
 auto|enum|operator|throw
