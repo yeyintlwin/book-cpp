@@ -205,11 +205,11 @@ int main()
 	
 	if(x)
 	{
-		cout << “x is true”; // none 0
+		cout << "x is true"; // none 0
 	}
 	else
 	{
-		cout << “x is false”;
+		cout << "x is false";
 	}
 
 	cout << endl;
