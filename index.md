@@ -126,8 +126,116 @@ int main()
 ## Data Types
 ![Data Type Example](drawing.svg)
 
-data types ဆိုတာ မှတ်ဉာဏ်မှာ အချက်အလက်တွေရဲ့ တန်ဖိုးတွေကို သိုမှီးဖို့အတွက် နေရာယူမည့်မှတ်ဉာဏ် ပမာဏကို ကြိုတင်သတ်မှတ် ပေးတာပါ။ Data types တစ်ခုနှင့်တစ်ခုက မှတ်ဉာဏ်မှာ နေရာယူပုံခြင်း မတူကြပါဘူး။ 
+data types ဆိုတာ မှတ်ဉာဏ်မှာ အချက်အလက်တွေရဲ့ တန်ဖိုးတွေကို သိုမှီးဖို့အတွက် နေရာယူမည့်မှတ်ဉာဏ် ပမာဏကို ကြိုတင်သတ်မှတ် ပေးတာပါ။ Data types တစ်ခုနှင့်တစ်ခုက မှတ်ဉာဏ်မှာ နေရာယူပုံခြင်း မတူကြပါဘူး။ Primary, Derived, User Defined ဆိုပြီး data-types ကို (၃) မျိူးခွဲနိုင်ပါတယ်။
 
 
 ![3data-types](drawing-1.svg)
 
+### Primitive Datatypes
+primitive data-types ဆိုတာ built-in data-types တွေဖြစ်ပါတယ်။ သူတို့ကို define လုပ်ပြီး တန်းသုံးနိုင်ပါတယ်။ primitive data-types ထဲမှာ-
+
+- Integer
+- Character
+- Boolean
+- Floating Point
+- Double Floating Point
+- Valueless or Void
+- Wide Character
+
+တို့ပါဝင်ပါတယ်။
+
+### Derived Data Types
+
+ဒီ data-types ကတော့ primitive data-types ကနေ ဆင်းသက်လာတာပါ။ သူ့မှာ-
+
+- Function
+- Array
+- Pointer
+- Reference
+
+ဆိုပြီး (၄) မျိုးရှိပါတယ်။
+
+### Abstract or User-Defined Data Types
+
+သူကတော့ user ကိုယ်တိုင်သတ်မှတ်ပေးရတဲ့ data-types အမျိုးအစားတွေပါ။ သူမှာ-
+
+- Class
+- Structure
+- Union
+- Enumeration
+- Typedef defined DataType
+
+တွေပါဝင်ပါတယ်။
+
+__Integer__: ကိန်းပြည့်တွေ သိုလှောင်ပေးဖို့ သုံးပါတယ်။ ဒဿမကိန်းတွေ လက်မခံနိုင်ပါဘူး။ `int` ဆိုတဲ့ keyword ဖြင့်အသုံး ပြုရပါတယ်။ မှတ်ဉာဏ်ပမာဏ 4 bytes အသုံးပြုပါတယ်။ -2147483648 ကနေ 2147483647 အထိတန်ဖိုးတွေကို သိုလှောင်ပေးနိုင်ပါတယ်။
+
+![int data-type](drawing-2.svg)
+
+__Character__: [ASCII Characters](https://www.ascii-code.com/) တွေရဲ့တန်ဖိုးကိုတွေ သိုလှောင်ပေးထားဖို့သုံးတာပါ။ `char` ဆိုတဲ့ keyword ကိုအသုံးပြုရပါတယ်။ သူကတော့ ယေဘုံယျအားဖြင့် မှတ်ဉာဏ်ပမာဏ 1 byte ကို အသုံးပြုပါတယ်။  သူ့ရဲ့  ranges ကတော့ -128 ကနေ 127 (သို့မဟုတ်) 0 ကနေ 255 အထိရှိပါတယ်။ 
+
+```cpp
+// Using char variable.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	char ch = 'A';
+	cout << "ch = " << ch << endl;
+	cout << "ch = " << (int)ch << ", hence an integer.";
+
+	return 0;
+}
+```
+
+__Boolean__: သူက true နဲ့ false ဆိုတဲ့ တန်ဖိုးနှစ်မျိုးပဲ သိုလှောင်ပေးနိုင်ပါတယ်။ 0 သည်လည်း false ဖြစ်ပြီး 0 မဟုတ်သောကိန်းမှန်သမျှသည် true ဖြစ်သည်။ boolean အတွက် keyword က `bool` ဖြစ်ပါတယ်။ 
+
+သီအိုရီအရ boolean က 1 bit ဖြစ်တယ်၊ သို့သော်လည်း တစ်ကယ်တမ်း 1 byte ကနေတစ်ဆင့် ပြန်ခွဲယူရမှာမို့ အချိန်ကြာမှာ ဖြစ်တဲ့အတွက် compiler ကိုင်တွယ်ရလွယ်တဲ့ 1 byte ကိုပဲသုံးလိုက်တာပါ။  
+
+```cpp
+// Using Boolean variable.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	bool x = false; // equal 0
+	
+	if(x)
+	{
+		cout << “x is true”; // none 0
+	}
+	else
+	{
+		cout << “x is false”;
+	}
+
+	cout << endl;
+
+	return 0;
+}
+```
+
+__Floaing Point__: ဒဿမကိန်းတွေ သိုလှောင်ပေးဖို့သုံးတာပါ။ `float` ဆိုတဲ့ keyword ဖြင်အသုံးပြုရပါတယ်။ ယေဘုံယျအားဖြင့် မှတ်ဉာဏ် 4 bytes ပမာဏကို အသုံးပြုပါတယ်။ ပုံမှန်အားဖြင့် decimal point (၇) နေရာလောက်ယူလိုရပါတယ်။
+
+__Double Floating Point__: float နဲ့ အတူတူပါပဲ ဒဿမကိန်းတွေသိုမှီးဖို့ပါ။ `double` ဆိုတဲ့ keyword ကိုအသုံးပြုရပါတယ်။ မှတ်ဉာဏ် 4 bytes အသုံးပြုလို့ float ထက် range (၂)ဆ ရှိပါတယ်။ ပုံမှန်အားဖြင့် decimal point (၁၅) နေရာလောက်ယူလိုရပါတယ်။
+
+```cpp
+// creating float type variables
+float num1 = 3.0f;
+float num2 = 3.5f;
+float num3 = 3E-5f; // 3x10^-5
+
+// creating double type variables
+double num4 = 3.0;
+double num5 = 3.5;
+double num6 = 3E-5; // 3x10^-5
+```
+
+`0.3f` မှာ f (or) F ဆိုတာ float ဖြစ်ကြောင်း compiler ကို ပြောပေးတာပါ။ `0.3` ပဲဆိုရင် double လို့ပဲ compiler ကသတ်မှတ်ပါလိမ့်မယ်။ ထိုကြောင့် float type ဆိုရင် data-type ကြေငြာထားသော်လည်း f (or) F ကို မဖြစ်််မနေထည့်ပေးရပါမယ််။
+
+`3E-5` မှာ e (or) E ဆိုတာ က exponetial ဖြစ်ပါတယ်၊ 3 x 10<sup>-5</sup> ဆိုတဲ့သဘောပါ။ 
+
+> အရမ်းတိကြဖို့ မလိုဘူးဆိုရင် double အစား float ကိုပဲ အမြဲသုံးသင့်ပါတယ်။
