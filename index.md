@@ -247,4 +247,5 @@ __Wide Character__: သူကလည်းပဲ character data type အမျိ
 ## Data Type Modifiers
 Data type modifier တွေကို built-in data types တွေရဲ့ ပုံမှန်ကိုင်တွယ်နိုင်တဲ့ data တွေရဲ့ length တွေကို ပြုပြင်ဖို့ သုံးပါတယ်။
 
+
 ![modifiers](drawing-3.svg)
