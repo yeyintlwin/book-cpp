@@ -1,7 +1,10 @@
 # C++
+
 ## Hello World
+
 _example_0.0.cpp_ နာမည်နဲ့ file တစ်ခုဖန်တီးပြီး အောက်ပါ code များထည့်ပါ။
-```cpp
+
+``` cpp
 // Hello World program.
 #include <iostream>
 
@@ -13,16 +16,18 @@ int main()
     return 0;
 }
 ```
+
 Terminal မှာ `g++ example_0.0.cpp` လို့ရိုက််ထည်းပြီး compile လုပ်လိုက်ပါ၊ _a.out_ ဆိုတဲ့ file တစ်ခု လက်ရှိ directory အောက်မှာ တိုးလာတာ တွေ့ရပါလိမ့်မယ်။ ထို့နောက် terminal မှာ `./a.out` လို့ရိုက်ပြီး run လိုက်လျှင် __Hello, World!__ ဆိုတဲ့ စာသား ပေါ်လာပါလိမ့်မယ်။
 
 ### မှတ်ချက် (comment) များရေးသားခြင်း
+
 eg 0.0 ရဲ့ ပထမစာကြောင်းက comment ပါ။ သူက program ကိုအကျိုးသက်ရောက်မှု မရှိပါဘူး။ 
 
 နောင်တစ်ချိန်မှာ ကိုယ်က သော်၎င်း အခြားသူတစ်ယောက်က သော်၎င်း မိမိရေးခဲ့တဲ့ program ကိုဖတ်ရာမှာ လွယ်ကူလျှင်မြန်စွာ နားလည်ဖို့ အတွက် comment များကို ရေးသားရပါတယ်။
 
 single-line နဲ့ multi-line ဆိုပြီး comment ရေးသားနည်း (၂) နည်းရှိပါတယ်၊ single-line က eg 0.0 မှာ ရေးသာထား တဲ့ပုံစံပါ၊ `//` (double slash) ရဲ့နောက်မှာ ရေးရပြီး မှတ်ချက် (၁) ကြောင်းထက်ပိုရေးလို့ မရပါဘူး။ multi-line က `/*` နဲ့ `*/` ကြားမှာ စာကြောင်းရေများများ ရေးလို့ရပါတယ်။ 
 
-```cpp
+``` cpp
 /*
     This is an example of multi-line comment 
     which can be write severial comments.
@@ -30,12 +35,14 @@ single-line နဲ့ multi-line ဆိုပြီး comment ရေးသာ�
 ```
 
 ### Preprocessing Directive
+
 ```cpp 
 #include <iostream>
-```
+
+``` 
 iostream ဆိုတဲ့ header file ကို လက်ရှိ program ထဲသို့ တစ်ပါတည်း compile လုပ်စဉ် ရောထည့်ပေးပါလို့ compiler ကိုအမိန့်ပေးလိုက်တာပါ။ header file ဆိုတာကလည်း program file ပါပဲ၊ ဒီလိုရေးသားလိုက်ခြင်းအားဖြင့် header file ထဲက လုပ်ဆောင်ချက်များကို ခေါ်ယူသုံးစွဲလို့ရသွားပါတယ်။ 
 
-C++ ရဲ့ library ထဲက built-in header file တွေကို ခေါ်ယူလိုလျှင် greater than `<` နဲ့ less than signs `>` နှစ်ခုကြားမှာ ထက်ပါအတိုင်း ရေးရပါတယ်။ အခြား thirdparty နဲ့ လက်ရှိ directory ထဲမှာရှိတဲ့ header file တွေကို ခေါ်ယူလိုလျှင်တော့ double quotes `"` နှစ်ကြားမှာ ရေးသားရပါတယ်။ ဥပမာ - `#include "myheader.h"`။
+C++ ရဲ့ library ထဲက built-in header file တွေကို ခေါ်ယူလိုလျှင် greater than `<` နဲ့ less than signs `>` နှစ်ခုကြားမှာ ထက်ပါအတိုင်း ရေးရပါတယ်။ အခြား thirdparty နဲ့ လက်ရှိ directory ထဲမှာရှိတဲ့ header file တွေကို ခေါ်ယူလိုလျှင်တော့ double quotes `"` နှစ်ကြားမှာ ရေးသားရပါတယ်။ ဥပမာ - `#include "myheader.h"` ။
 
 ### Main Function
 
@@ -50,25 +57,30 @@ int main()
     return 0;
 }
 ```
+
 C++ မှာ ကျွန်ုပ်တို့ရေး မည့် code statement တွေကို main function ရဲ့ code block အစဖြစ်တဲ့ left brace `{` ကနေစပြီး တစ်ကြောင်းခြင်း ဖြေရှင်းသွားမှာဖြစ်ပါတယ်။ right brace `}` ရောက်တဲ့အခါမှာ အကုန် ဖြေရှင်းပြီးဖြစ်သည်။ ထို bracket နှစ်ခုကြားကို code block တစ်ခုလို့ခေါ်ပါတယ်။
 
 `return 0;` ကတော့ main function ကိုခေါ်ထားတဲ့ operating system ကို သုညဆိုတဲ့ တန်ဖိုးကိုပြန်ပေးပြီး program ကို အဆုံးသတ် လိုက်မှာဖြစ်ပါတယ်။
 
-```cpp
+``` cpp
 std::cout << "Hello, World!" << std::endl;
 ```
+
 Hello, World! ဆိုတဲ့ စာသားကို ဒီ statement ထုတ်ပေးတာပါ။ 
-- `std` ဆိုတာက cout function ရှိနေတဲ့ class ဖြစ်ပါတယ်။ 
-- `cout` ဆိုတာက program ကို output ထုတ်ပေးမည့် လုပ်ဆောင်ချက် တစ်ခု ဖြစ်ပါတယ်။ သူ့ကို iostream ဆိုတဲ့ header ထဲကခေါ်ယူထားခဲ့တာပါ။ 
-- `<<` ကို steam insertion operator လို့ခေါ်ပြီး နောက်က စာသားတွေကို cout သို့ပေးပြီး screen မှာပြသပေးဖို့ဖြစ်ပါတယ်။ 
-- `endl` ကတော့ စာကြောင်း နောက်တစ်ကြာင်း ဆင်းပေးဖို့ပါ၊ `'\n'`နဲ့ တူပြီး သူကတော့ bundle ကို refrash လုပ်ပေးပါသေးတယ်။ သူလည်းပဲ std class ထဲကပါ။
-- statement တစ်ကြောင်းဆုံးတိုင်း `;` semicolon ပိတ်ပေးရပါတယ်။ 
+
+* `std` ဆိုတာက cout function ရှိနေတဲ့ class ဖြစ်ပါတယ်။ 
+* `cout` ဆိုတာက program ကို output ထုတ်ပေးမည့် လုပ်ဆောင်ချက် တစ်ခု ဖြစ်ပါတယ်။ သူ့ကို iostream ဆိုတဲ့ header ထဲကခေါ်ယူထားခဲ့တာပါ။ 
+* `<<` ကို steam insertion operator လို့ခေါ်ပြီး နောက်က စာသားတွေကို cout သို့ပေးပြီး screen မှာပြသပေးဖို့ဖြစ်ပါတယ်။ 
+* `endl` ကတော့ စာကြောင်း နောက်တစ်ကြာင်း ဆင်းပေးဖို့ပါ၊ `'\n'` နဲ့ တူပြီး သူကတော့ bundle ကို refrash လုပ်ပေးပါသေးတယ်။ သူလည်းပဲ std class ထဲကပါ။
+* statement တစ်ကြောင်းဆုံးတိုင်း `;` semicolon ပိတ်ပေးရပါတယ်။ 
 
 > semicolon မေ့ကျန်ရင် error တက်မှာပါ။
 
 ## Identifiers
+
 _example_0.1.cpp_
-```cpp
+
+``` cpp
 // Adding the two numbers.
 #include <iostream>
 
@@ -88,16 +100,16 @@ int main()
     return 0;
 }
 ```
-ဒီ program က ကိန်းပြည့်နှစ်လုံးကို ပေါင်းပေးတာပါ။ program ထဲရှိ `first_num`၊ `second_num` နှင့် `total` ဆိုတာ variable name တွေဖြစ်ပါတယ်။ အချက်အလက် တန်ဖိုးတွေ မှတ်ဉာဏ်မှာ ခဏသိမ်းပေးဖို့အတွက် နာမည်လေးတွေ တပ်ပေးရပါတယ်။ ဒီလိုနာမည်လေးတွေကို identifier လို့ခေါ်ပါတယ်။
+
+ဒီ program က ကိန်းပြည့်နှစ်လုံးကို ပေါင်းပေးတာပါ။ program ထဲရှိ `first_num` ၊ `second_num` နှင့် `total` ဆိုတာ variable name တွေဖြစ်ပါတယ်။ အချက်အလက် တန်ဖိုးတွေ မှတ်ဉာဏ်မှာ ခဏသိမ်းပေးဖို့အတွက် နာမည်လေးတွေ တပ်ပေးရပါတယ်။ ဒီလိုနာမည်လေးတွေကို identifier လို့ခေါ်ပါတယ်။
 
 နာမည်တွေပေးရာမှာ ကန့်သတ်ချက် အချို့ရှိပါတယ်။ ထိုကန့်သတ်ချက်မှာ အောက်ပါအတိုင်းဖြစ်ပါတယ်။
 
-- နာမည်ပေးရာမှာ `a` ကနေ `z`၊ `A` ကနေ `Z`၊ `0` ကနေ `9` နှင့် _ (underscore character) စတဲ့ စာလုံးတွေပဲ ပါဝင်လို့ရမှာပါ။ အခြား စာလုံးဆိုရင် space တစ်ချက်တောင် ခြားပေးလို့မရပါဘူး။
-- 0-9 ကိန်းဂဏန်းတွေနဲ့ စရေးလို့မရပါဘူး။
-- ကြိုက်သလောက် ရှည်ရှည်ရေးလို့ရပေမဲ့ ရှေဆုံးစာလုံး (၃၂) အကျုံးဝင်ပါတယ်။ (၁) လုံးတည်းပေးလည်း ရပါတယ်။
-- C++ က case sensitive ဖြစ်လို့ ဥပမာ- MyName, myName နှင့် myname တို့က တစ်ခုနှင့်တစ်ခု မတူပါဘူး။
-- C++ အတွက်သီးသန့် သတ်မှတ်ပေးထားတဲ့ စကားလုံး (keyword) တွေကိုသုံးလို့မရပါဘူး။ ထိုစကားလုံးများမှာ-
-
+* နာမည်ပေးရာမှာ `a` ကနေ `z` ၊ `A` ကနေ `Z` ၊ `0` ကနေ `9` နှင့် _ (underscore character) စတဲ့ စာလုံးတွေပဲ ပါဝင်လို့ရမှာပါ။ အခြား စာလုံးဆိုရင် space တစ်ချက်တောင် ခြားပေးလို့မရပါဘူး။
+* 0-9 ကိန်းဂဏန်းတွေနဲ့ စရေးလို့မရပါဘူး။
+* ကြိုက်သလောက် ရှည်ရှည်ရေးလို့ရပေမဲ့ ရှေဆုံးစာလုံး (၃၂) အကျုံးဝင်ပါတယ်။ (၁) လုံးတည်းပေးလည်း ရပါတယ်။
+* C++ က case sensitive ဖြစ်လို့ ဥပမာ- MyName, myName နှင့် myname တို့က တစ်ခုနှင့်တစ်ခု မတူပါဘူး။
+* C++ အတွက်သီးသန့် သတ်မှတ်ပေးထားတဲ့ စကားလုံး (keyword) တွေကိုသုံးလို့မရပါဘူး။ ထိုစကားလုံးများမှာ-
 
 |   |   |   |   |
 | :---: | :---: | :---: | :---: |
@@ -118,29 +130,29 @@ int main()
 | double | mutable | switch | while |
 | dynamic_cast | namespace | templete |
 
-
 တို့ဖြစ်ပါတယ်။
 
-> နာမည်တွေပေးရာမှာ variable, class, function, etc,... စတာတွေကို ပေးတာပါ။ ပေးပုံပေးနည်း styles တွေရှိပါတယ်။ ကြိုက်သလိုရေးလို့ရနိုင်ပေမဲ့ ဖတ်ရလွယ်အောင် တစ်ခုကို style တစ်မျိုးနဲ့ပေးသင့်ပါတယ်။ 
+> နာမည်တွေပေးရာမှာ variable, class, function, etc, ... စတာတွေကို ပေးတာပါ။ ပေးပုံပေးနည်း styles တွေရှိပါတယ်။ ကြိုက်သလိုရေးလို့ရနိုင်ပေမဲ့ ဖတ်ရလွယ်အောင် တစ်ခုကို style တစ်မျိုးနဲ့ပေးသင့်ပါတယ်။ 
 
 ## Data Types
+
 ![Data Type Example](drawing.svg)
 
 data types ဆိုတာ မှတ်ဉာဏ်မှာ အချက်အလက်တွေရဲ့ တန်ဖိုးတွေကို သိုမှီးဖို့အတွက် နေရာယူမည့်မှတ်ဉာဏ် ပမာဏကို ကြိုတင်သတ်မှတ် ပေးတာပါ။ Data types တစ်ခုနှင့်တစ်ခုက မှတ်ဉာဏ်မှာ နေရာယူပုံခြင်း မတူကြပါဘူး။ Primary, Derived, User Defined ဆိုပြီး data-types ကို (၃) မျိူးခွဲနိုင်ပါတယ်။
 
-
 ![3data-types](drawing-1.svg)
 
-### Primitive Datatypes
+### Primitive Data Types
+
 primitive data-types ဆိုတာ built-in data-types တွေဖြစ်ပါတယ်။ သူတို့ကို define လုပ်ပြီး တန်းသုံးနိုင်ပါတယ်။ primitive data-types ထဲမှာ-
 
-- Integer
-- Character
-- Boolean
-- Floating Point
-- Double Floating Point
-- Valueless or Void
-- Wide Character
+* Integer
+* Character
+* Boolean
+* Floating Point
+* Double Floating Point
+* Valueless or Void
+* Wide Character
 
 တို့ပါဝင်ပါတယ်။
 
@@ -148,22 +160,22 @@ primitive data-types ဆိုတာ built-in data-types တွေဖြစ်�
 
 ဒီ data-types ကတော့ primitive data-types ကနေ ဆင်းသက်လာတာပါ။ သူ့မှာ-
 
-- Function
-- Array
-- Pointer
-- Reference
+* Function
+* Array
+* Pointer
+* Reference
 
 ဆိုပြီး (၄) မျိုးရှိပါတယ်။
 
 ### Abstract or User-Defined Data Types
 
-သူကတော့ user ကိုယ်တိုင်သတ်မှတ်ပေးရတဲ့ data-types အမျိုးအစားတွေပါ။ သူမှာ-
+သူကတော့ user ကိုယ်တိုင်သတ်မှတ်ပေးရတဲ့ data-types အမျိုးအစားတွေပါ။ သူ့မှာ-
 
-- Class
-- Structure
-- Union
-- Enumeration
-- Typedef defined DataType
+* Class
+* Structure
+* Union
+* Enumeration
+* Typedef defined DataType
 
 တွေပါဝင်ပါတယ်။
 
@@ -173,7 +185,7 @@ __Integer__: ကိန်းပြည့်တွေ သိုလှောင်
 
 __Character__: [ASCII Characters](https://www.ascii-code.com/) တွေရဲ့တန်ဖိုးကိုတွေ သိုလှောင်ပေးထားဖို့သုံးတာပါ။ `char` ဆိုတဲ့ keyword ကိုအသုံးပြုရပါတယ်။ သူကတော့ ယေဘုံယျအားဖြင့် မှတ်ဉာဏ်ပမာဏ 1 byte ကို အသုံးပြုပါတယ်။  သူ့ရဲ့  ranges ကတော့ -128 ကနေ 127 (သို့မဟုတ်) 0 ကနေ 255 အထိရှိပါတယ်။ 
 
-```cpp
+``` cpp
 // Using char variable.
 #include <iostream>
 
@@ -193,7 +205,7 @@ __Boolean__: သူက `true` နဲ့ `false` ဆိုတဲ့ တန်ဖ�
 
 သီအိုရီအရ boolean က 1 bit ဖြစ်တယ်၊ သို့သော်လည်း တစ်ကယ်တမ်း 1 byte ကနေတစ်ဆင့် ပြန်ခွဲယူရမှာမို့ အချိန်ကြာမှာ ဖြစ်တဲ့အတွက် compiler ကိုင်တွယ်ရလွယ်တဲ့ 1 byte ကိုပဲသုံးလိုက်တာပါ။  
 
-```cpp
+``` cpp
 // Using Boolean variable.
 #include <iostream>
 
@@ -218,11 +230,11 @@ int main()
 }
 ```
 
-__Floaing Point__: ဒဿမကိန်းတွေ သိုလှောင်ပေးဖို့သုံးတာပါ။ `float` ဆိုတဲ့ keyword ဖြင်အသုံးပြုရပါတယ်။ ယေဘုံယျအားဖြင့် မှတ်ဉာဏ် 4 bytes ပမာဏကို အသုံးပြုပါတယ်။ ပုံမှန်အားဖြင့် decimal point (၇) နေရာလောက်ယူလိုရပါတယ်။
+__Floaing Point__: ဒဿမကိန်းတွေ သိုလှောင်ပေးဖို့သုံးတာပါ။ `float` ဆိုတဲ့ keyword ဖြင်အသုံးပြုရပါတယ်။ ယေဘုံယျအားဖြင့် မှတ်ဉာဏ် 4 bytes ပမာဏကို အသုံးပြုပါတယ်။ ပုံမှန်အားဖြင့် decimal point (၇) နေရာလောက်ယူလို့ရပါတယ်။
 
 __Double Floating Point__: `float` နဲ့ အတူတူပါပဲ ဒဿမကိန်းတွေသိုမှီးဖို့ပါ။ `double` ဆိုတဲ့ keyword ကိုအသုံးပြုရပါတယ်။ မှတ်ဉာဏ် 4 bytes အသုံးပြုလို့ `float` ထက် range (၂)ဆ ရှိပါတယ်။ ပုံမှန်အားဖြင့် decimal point (၁၅) နေရာလောက်ယူလိုရပါတယ်။
 
-```cpp
+``` cpp
 // creating float type variables
 float num1 = 3.0f;
 float num2 = 3.5f;
@@ -245,7 +257,122 @@ __Void__: သူ့ရဲ့အဓိပ္ပာယ်အတိုင်း ဘ
 __Wide Character__: သူကလည်းပဲ character data type အမျိုးအစားပါ။ ဒါပေမဲ့ size က ပုံမှန် 8-bit datatype ထက်ကြီးပါတယ်။ `wchar_t` ဆိုတဲ့ keyword နဲ့ကိုယ်စားပြုပါတယ်။ ယေဘုံယျအားဖြင့်မှတ်ဉာဏ် ပမာဏ 2 bytes သို့မဟုတ် 4 bytes နေရာယူပါတယ်။ `char` က 0 ကနေ 255 ပဲဝင်ဆန့်လို့ English နဲ့ Latin လောက်ပဲထောက်ပံ့နိုင်ပါတယ်၊ နိုင်ငံခြားဘာသာတွေကိုကိုင်တွယ်ဖို့ `wchar_t` ကိုအသုံးပြုရပါတယ်။
 
 ## Data Type Modifiers
-Data type modifier တွေကို built-in data types တွေရဲ့ ပုံမှန်ကိုင်တွယ်နိုင်တဲ့ data တွေရဲ့ length တွေကို ပြုပြင်ဖို့ သုံးပါတယ်။
 
+Data type modifier တွေကို built-in data types တွေရဲ့ ပုံမှန်ကိုင်တွယ်နိုင်တဲ့ data တွေရဲ့ length နဲ့ range ကို ပြုပြင်ဖို့ သုံးပါတယ်။
 
 ![modifiers](drawing-3.svg)
+
+C++ မှာအသုံးပြုလို့ရနိုင်မည့် data-types modifiers တွေကတော့ -
+
+* signed
+* unsigned
+* long
+* short 
+
+တို့ဖြစ်ကြပါတယ်။
+
+အောက်ပါ ဇယားကတော့ built-in data-types တွေကို modifier တွေနဲ့ တွဲလိုက်တဲ့အခါမှာ သိုလှောင်နိုင်မှု တန်ဖိုးတွေ နဲ့ လက်ခံနိုင်တဲ့ range တွေ ပြောင်းသွားပုံ ဥပမာပါ။
+
+| DATA TYPE | SIZE (BYTE) | RANGE |
+| -- | :--: | -- |
+| short int | 2 | -32, 768 to 32, 767
+| unsigned short int | 2 | 0 to 65, 535
+| unsigned int | 4 | 0 to 4, 294, 967, 295 |
+| int | 4 | -2, 147, 483, 648 to 2, 147, 483, 647 |
+| long int | 4 | -2, 147, 483, 648 to 2, 147, 483, 647 |
+| unsigned long int  | 4 | 0 to 4, 294, 967, 295 |
+| long long int | 8 | -(2^63) to (2^63)-1 |
+| unsigned long long int | 8 | 0 to 18, 446, 744, 073, 709, 551, 615 |
+| signed char |	1 |	-128 to 127 |
+| unsigned char | 1 | 0 to 255 |
+| float | 4 |  |
+| double | 8 |  |
+| long double |	12 |
+| wchar_t |	2 or 4 | 1 wide character |
+
+အထက်ဥပမာမှာ ပြပေးထားတဲ့ တန်ဖိုးတွေက အသုံးပြုတဲ့ compiler အမျိုးအစား နဲ့ ကွန်ပျုတာပေါ်မူတည်ပြီး တန်ဖိုးတွေ အနည်းငယ် ပြောင်းသွားနိုင်ပါတယ်။ ကျွန်တော်က GCC Compiler နဲ့ 64 bit ကွန်ပျူတာပေါ်မှာ စမ်းထားတာပါ။ 
+
+`sizeof()` ဆိုတဲ့ operator ကိုသုံးပြီး သင့်ကွန်ပျုတာမှာ data type တွေကို arguement လိုမျိုး pass လုပ်ပြီး data-types တွေရဲ့ size ကိုဖော်ပြပေးလို့ရပါတယ်။
+
+``` cpp
+// C++ program to sizes of data types 
+#include<iostream> 
+using namespace std; 
+  
+int main() 
+{ 
+    cout << "Size of char : " << sizeof(char)  
+      << " byte" << endl; 
+    cout << "Size of int : " << sizeof(int) 
+      << " bytes" << endl; 
+    cout << "Size of short int : " << sizeof(short int)  
+      << " bytes" << endl; 
+    cout << "Size of long int : " << sizeof(long int)  
+       << " bytes" << endl; 
+    cout << "Size of signed long int : " << sizeof(signed long int) 
+       << " bytes" << endl; 
+    cout << "Size of unsigned long int : " << sizeof(unsigned long int)  
+       << " bytes" << endl; 
+    cout << "Size of float : " << sizeof(float)  
+       << " bytes" <<endl; 
+    cout << "Size of double : " << sizeof(double)  
+       << " bytes" << endl; 
+    cout << "Size of wchar_t : " << sizeof(wchar_t)  
+       << " bytes" <<endl; 
+      
+    return 0; 
+} 
+```
+
+Output:
+
+``` 
+Size of char : 1 byte
+Size of int : 4 bytes
+Size of short int : 2 bytes
+Size of long int : 8 bytes
+Size of signed long int : 8 bytes
+Size of unsigned long int : 8 bytes
+Size of float : 4 bytes
+Size of double : 8 bytes
+Size of wchar_t : 4 bytes
+```
+
+## C++ Constants/Literals
+
+C++ မှာကိန်းသေဖြစ်နေတဲ့ တန်ဖိုးတွေကို constant လို့ခေါ်တယ်။ အခြေခံ data types တွေကို constant လုပ်နိုင်တယ်။ int, float, char, string နဲ့ bool တွေအဖြစ်ပြန်ခွဲထုတ်လို့ပါတယ်။
+
+__Integer Literals__: သူက deximal, octal ဒါမှမဟုတ် hexadecimal constant တွေဖြစ်နိုင်တယ်။ သူတို့တွေကို base ဒါမှမဟုတ် rediax တွေနဲ့ ခွဲခြားသတ်မှတ်ပေးရတယ်။ 
+
+* hexadecimal ကိန်းတွေဆိုရင် `0x` သို့ `0X` နဲ့စရေးပေးရတယ်။ 
+* octal တွေအတွက် `0` နဲ့စရေးပေးရတယ်၊ 
+* deximal ကတော့ ဘာမှထည့်ပေးစရာမလိုပါဘူး။
+
+intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` တို့ `L` တို့နဲ့တွဲရေးပေးလို့ရပါသေးတယ်။ `U` က Unsigned ဖြစ်ပြီး `L` က Long ပါ၊ lowestcase ကော uppercase ကောအသုံးပြုနိုင်ပါတယ်။ 
+
+ဒါကတော့ integer literal အမျိုးအစားတွေရဲ့ ဥပမာ ဖြစ်ပါတယ်။ အားလုံးရဲ့တန်ဖိုးက 91 နဲ့ညီပါတယ်။
+
+``` 
+91   --> decimal
+0133 --> octal
+0x5b --> hexadecimal
+
+91   --> int
+91u  --> unsigned int
+91l  --> long 
+91ul --> unsigned long
+```
+
+__Floating-point Literals__: floating-point literal တစ်ခုမှာ integer အစိတ်အပိုင်းတစ်ခု၊ decimal point တစ်ခု၊ အပိုင်းဂဏန်းအစိတ်အပိုင်းတစ်ခု၊ exponential အစိတ်အပိုင်းတစ်ခုပါဝင်ပါဝင်ပါတယ်။ သူကို decimal form တစ်ခုဖြစ်၎င်း exponential form တစ်ခုဖြစ်၎င်း ကိုစားပြုပေးလို့ရပါတယ်။
+
+decimal form တစ်ခုကိုအသုံးပြုတဲ့အခါမှာ decimal point တစ်ခု ဒါမှမဟုတ် exponent တစ်ခု သိုမဟုတ် နှစ်ခုစလုံး မဖြစ်မနေထည့်ပေးရပါမယ်။ exponential form ကိုစားပြုချင်တဲ့အခါမှာ integer part၊ fractional part သို့မဟုတ် နှစ်ခုလုံးကို ထည့်ပေးရမှာပါ။
+
+expontial ကို `e` သို့ဟုတ် `E` နဲ့ကိုယ်စားပြုတာကို floating point မှာတစ်ခါရှင်းပြပြီးဖြစ်သည်။
+
+``` 
+3.14159    // only decimal point
+314159e-5l // only exponent
+314.159e-2 // both
+```
+
+![](drawing-4.svg)
