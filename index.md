@@ -342,20 +342,22 @@ Size of wchar_t : 4 bytes
 
 C++ မှာကိန်းသေဖြစ်နေတဲ့ တန်ဖိုးတွေကို constant လို့ခေါ်တယ်။ အခြေခံ data types တွေကို constant လုပ်နိုင်တယ်။ int, float, char, string နဲ့ bool တွေအဖြစ်ပြန်ခွဲထုတ်လို့ပါတယ်။
 
-__Integer Literals__: သူက deximal, octal ဒါမှမဟုတ် hexadecimal constant တွေဖြစ်နိုင်တယ်။ သူတို့တွေကို base ဒါမှမဟုတ် rediax တွေနဲ့ ခွဲခြားသတ်မှတ်ပေးရတယ်။ 
+__Integer Literals__: သူက deximal, octal, binary ဒါမှမဟုတ် hexadecimal constant တွေဖြစ်နိုင်တယ်။ သူတို့တွေကို base ဒါမှမဟုတ် rediax တွေနဲ့ ခွဲခြားသတ်မှတ်ပေးရတယ်။ 
 
 * hexadecimal ကိန်းတွေဆိုရင် `0x` သို့ `0X` နဲ့စရေးပေးရတယ်။ 
 * octal တွေအတွက် `0` နဲ့စရေးပေးရတယ်၊ 
 * deximal ကတော့ ဘာမှထည့်ပေးစရာမလိုပါဘူး။
+* binary က `0b` နဲ့စပေးရမှာဖြစ်ပါတယ်။
 
 intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` တို့ `L` တို့နဲ့တွဲရေးပေးလို့ရပါသေးတယ်။ `U` က Unsigned ဖြစ်ပြီး `L` က Long ပါ၊ lowestcase ကော uppercase ကောအသုံးပြုနိုင်ပါတယ်။ 
 
 ဒါကတော့ integer literal အမျိုးအစားတွေရဲ့ ဥပမာ ဖြစ်ပါတယ်။ အားလုံးရဲ့တန်ဖိုးက 91 နဲ့ညီပါတယ်။
 
 ``` 
-91   --> decimal
-0133 --> octal
-0x5b --> hexadecimal
+91         --> decimal
+0133       --> octal
+0x5b       --> hexadecimal
+0b01011011 --> binary
 
 91   --> int
 91u  --> unsigned int
@@ -369,10 +371,12 @@ decimal form တစ်ခုကိုအသုံးပြုတဲ့အခါ�
 
 expontial ကို `e` သို့ဟုတ် `E` နဲ့ကိုယ်စားပြုတာကို floating point မှာတစ်ခါရှင်းပြပြီးဖြစ်သည်။
 
+![](drawing-4.svg)
+
+floating-point literal ရဲ့ ဥပမာဖြစ်ပြီး အားလုံးက PI တန်ဖိုးများဖြစ်သည်။
+
 ``` 
 3.14159    // only decimal point
 314159e-5l // only exponent
 314.159e-2 // both
 ```
-
-![](drawing-4.svg)
