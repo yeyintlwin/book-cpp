@@ -365,7 +365,7 @@ intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` �
 91ul --> unsigned long
 ```
 
-__Floating-point Literals__: floating-point literal တစ်ခုမှာ integer အစိတ်အပိုင်းတစ်ခု၊ decimal point တစ်ခု၊ အပိုင်းဂဏန်းအစိတ်အပိုင်းတစ်ခု၊ exponential အစိတ်အပိုင်းတစ်ခုပါဝင်ပါဝင်ပါတယ်။ သူကို decimal form တစ်ခုဖြစ်၎င်း exponential form တစ်ခုဖြစ်၎င်း ကိုစားပြုပေးလို့ရပါတယ်။
+__Floating-point Literals__: floating-point literal တစ်ခုမှာ integer part တစ်ခု၊ decimal point တစ်ခု၊ fractional partတစ်ခု၊ exponential part ပါဝင်ပါဝင်ပါတယ်။ သူ့ကို decimal form တစ်ခုဖြစ်၎င်း exponential form တစ်ခုဖြစ်၎င်း ကိုစားပြုပေးလို့ရပါတယ်။
 
 decimal form တစ်ခုကိုအသုံးပြုတဲ့အခါမှာ decimal point တစ်ခု ဒါမှမဟုတ် exponent တစ်ခု သိုမဟုတ် နှစ်ခုစလုံး မဖြစ်မနေထည့်ပေးရပါမယ်။ exponential form ကိုစားပြုချင်တဲ့အခါမှာ integer part၊ fractional part သို့မဟုတ် နှစ်ခုလုံးကို ထည့်ပေးရမှာပါ။
 
@@ -380,3 +380,32 @@ floating-point literal ရဲ့ ဥပမာဖြစ်ပြီး အား�
 314159e-5l // only exponent
 314.159e-2 // both
 ```
+
+__Boolean Literals__: သူမှာတော့ true နဲ့ false နှစ်ခုပဲရှိပါတယ်။ (boolean data-type မှာတုန်းက ရှင်းပြပြီးဖြစ်သည်။)
+
+__Character Literals__: char literals တွေကို single quote `'` နှစ်ခုကြားမှာရေးရပါတယ်။ 
+
+char literal တွေကို L(အကြီး) ဖြင့်စလျှင် wide char literal (e.g., L'x') ဖြစ်ပြီး `wchar_t` variable type နဲ့ store လုပ်သင့်ပါတယ်။ 
+
+(e.g., 'x') က narrow character literal ဖြစ်ပြီးတော့ ရိုးရိုး `char` variable type မှာ သိမ်းပေးထားနိုင်ပါတယ်။ 
+
+character မှာ plain character (e.g., 'x'), eclipse sequence (e.g., '\t') နှင့် universal character (e.g., '\u02C0')ဆိုပြီးရှိပါတယ်။ 
+
+C++ မှာ backslash နဲ့တွဲပေးရင် special character ဖြစ်သွားတဲ့ character အချို့ရှိပါတယ်။ newline `\n` နှင့် tab `\t` လိုမျိုးတွေပါ။ escapse sequence လို့ခေါ်ပါတယ်။ escapse sequence အချို့ကိုအောက်မှာဖော်ပြပေးပါတယ် -
+
+| Escapse Sequence | Meaning |
+| :--: | -- |
+| \\' | single quote |
+| \\" | double quote |
+| \\\ | backslash |
+| \\0 | null (zero) character |
+| \\0nnn | octal number (nnn) |
+| \\a | audible character |
+| \\b | backspace |
+| \\f | fromfeed |
+| \\n | newline |
+| \\r | carriage return |
+| \\t | horizontal tab |
+| \\v | vertical tab |
+| \\x | hexadecimal number (nnn) |
+| \\? | question mark |
