@@ -409,3 +409,24 @@ C++ မှာ backslash နဲ့တွဲပေးရင် special character �
 | \\v | vertical tab |
 | \\x | hexadecimal number (nnn) |
 | \\? | question mark |
+
+``` cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   cout << "Hello\tWorld\n\n";
+   return 0;
+}
+```
+
+Output:
+
+``` 
+Hello    World
+
+```
+
+__String Literals__: တွေက double quote `"` နှစ်ခုကြားမှာရေးရပါတယ်။ string တစ်ခုမှာ plain characters တွေ၊ escapse sequences တွေ၊ universal charactes တွေပါဝင်နိုင်ပါတယ်။ 
