@@ -430,3 +430,15 @@ Hello    World
 ```
 
 __String Literals__: တွေက double quote `"` နှစ်ခုကြားမှာရေးရပါတယ်။ string တစ်ခုမှာ plain characters တွေ၊ escapse sequences တွေ၊ universal charactes တွေပါဝင်နိုင်ပါတယ်။ 
+
+string literals မှာ white space တွေကိုသုံးပြီး စာကြောင်းရှည်တွေကို တစ်ကြောင်းချင်းစီခွဲထုတ်တာတို့လုပ်နိုင်ပါတယ်။
+
+``` cpp
+"Hello, dear"
+
+"Hello, \
+dear"
+
+"Hello, " "d" "ear" 
+
+```
