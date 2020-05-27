@@ -481,18 +481,18 @@ int main()
 }
 ```
 
+Output:
+
+``` 
+50
+```
+
 ### The const Keyword
 
 သေချာတဲ့ data-type အမျိုးအစားတွေကို ကိန်းသေအဖြစ်သတ်မှာပေးဖို့ `const` prefix ကိုသုံးနိုင်ပါတယ်။ 
 
 ``` cpp
 const type variable = value;
-```
-
-Output:
-
-``` 
-50
 ```
 
 အသုံးပြုပုံ ဥပမာဖြစ်ပါတယ် -
