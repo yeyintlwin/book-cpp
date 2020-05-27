@@ -340,7 +340,7 @@ Size of wchar_t : 4 bytes
 
 ## C++ Constants/Literals
 
-C++ မှာကိန်းသေဖြစ်နေတဲ့ တန်ဖိုးတွေကို constant လို့ခေါ်တယ်။ အခြေခံ data types တွေကို constant လုပ်နိုင်တယ်။ int, float, char, string နဲ့ bool တွေအဖြစ်ပြန်ခွဲထုတ်လို့ပါတယ်။
+C++ မှာကိန်းသေဖြစ်နေတဲ့ တန်ဖိုးတွေကို constant လို့ခေါ်တယ်။ အခြေခံ data types တွေကို constant လုပ်နိုင်တယ်။ int, float, char, string နဲ့ bool တွေအဖြစ် ပြန်ခွဲထုတ်လို့ပါတယ်။
 
 __Integer Literals__: သူက deximal, octal, binary ဒါမှမဟုတ် hexadecimal constant တွေဖြစ်နိုင်တယ်။ သူတို့တွေကို base ဒါမှမဟုတ် rediax တွေနဲ့ ခွဲခြားသတ်မှတ်ပေးရတယ်။ 
 
@@ -349,7 +349,7 @@ __Integer Literals__: သူက deximal, octal, binary ဒါမှမဟုတ�
 * deximal ကတော့ ဘာမှထည့်ပေးစရာမလိုပါဘူး။
 * binary က `0b` နဲ့စပေးရမှာဖြစ်ပါတယ်။
 
-intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` တို့ `L` တို့နဲ့တွဲရေးပေးလို့ရပါသေးတယ်။ `U` က Unsigned ဖြစ်ပြီး `L` က Long ပါ၊ lowestcase ကော uppercase ကောအသုံးပြုနိုင်ပါတယ်။ 
+intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` တို့ `L` တို့နဲ့တွဲရေးပေးလို့ ရပါသေးတယ်။ `U` က Unsigned ဖြစ်ပြီး `L` က Long ပါ၊ lowestcase ကော uppercase ကောအသုံးပြုနိုင်ပါတယ်။ 
 
 ဒါကတော့ integer literal အမျိုးအစားတွေရဲ့ ဥပမာ ဖြစ်ပါတယ်။ အားလုံးရဲ့တန်ဖိုးက 91 နဲ့ညီပါတယ်။
 
@@ -365,11 +365,11 @@ intiger leterals တွေကို suffix တွေဖြစ်တဲ့ `U` �
 91ul --> unsigned long
 ```
 
-__Floating-point Literals__: floating-point literal တစ်ခုမှာ integer part တစ်ခု၊ decimal point တစ်ခု၊ fractional partတစ်ခု၊ exponential part ပါဝင်ပါဝင်ပါတယ်။ သူ့ကို decimal form တစ်ခုဖြစ်၎င်း exponential form တစ်ခုဖြစ်၎င်း ကိုစားပြုပေးလို့ရပါတယ်။
+__Floating-point Literals__: floating-point literal တစ်ခုမှာ integer part တစ်ခု၊ decimal point တစ်ခု၊ fractional partတစ်ခု၊ exponential part တစ်ခု ပါဝင်ပါတယ်။ သူ့ကို decimal form တစ်ခုဖြစ်၎င်း exponential form တစ်ခုဖြစ်၎င်း ကိုစားပြုပေးလို့ရပါတယ်။
 
-decimal form တစ်ခုကိုအသုံးပြုတဲ့အခါမှာ decimal point တစ်ခု ဒါမှမဟုတ် exponent တစ်ခု သိုမဟုတ် နှစ်ခုစလုံး မဖြစ်မနေထည့်ပေးရပါမယ်။ exponential form ကိုစားပြုချင်တဲ့အခါမှာ integer part၊ fractional part သို့မဟုတ် နှစ်ခုလုံးကို ထည့်ပေးရမှာပါ။
+decimal form တစ်ခုကို အသုံးပြုတဲ့အခါမှာ decimal point တစ်ခု ဒါမှမဟုတ် exponent တစ်ခု သိုမဟုတ် နှစ်ခုစလုံး မဖြစ်မနေ ထည့်ပေးရပါမယ်။ exponential form ကိုစားပြုချင်တဲ့အခါမှာ integer part၊ fractional part သို့မဟုတ် နှစ်ခုလုံးကို ထည့်ပေးရမှာပါ။
 
-expontial ကို `e` သို့ဟုတ် `E` နဲ့ကိုယ်စားပြုတာကို floating point မှာတစ်ခါရှင်းပြပြီးဖြစ်သည်။
+expontial ကို `e` သို့ဟုတ် `E` နဲ့ကိုယ်စားပြုတာကို floating point မှာတုန်းက တစ်ခါ ရှင်းပြပြီးဖြစ်သည်။
 
 ![](drawing-4.svg)
 
@@ -391,7 +391,7 @@ char literal တွေကို L(အကြီး) ဖြင့်စလျှ�
 
 character မှာ plain character (e.g., 'x'), eclipse sequence (e.g., '\t') နှင့် universal character (e.g., '\u02C0')ဆိုပြီးရှိပါတယ်။ 
 
-C++ မှာ backslash နဲ့တွဲပေးရင် special character ဖြစ်သွားတဲ့ character အချို့ရှိပါတယ်။ newline `\n` နှင့် tab `\t` လိုမျိုးတွေပါ။ escapse sequence လို့ခေါ်ပါတယ်။ escapse sequence အချို့ကိုအောက်မှာဖော်ပြပေးပါတယ် -
+C++ မှာ backslash နဲ့တွဲပေးရင် special character ဖြစ်သွားတဲ့ character အချို့ရှိပါတယ်။ newline `\n` နှင့် tab `\t` လိုမျိုးတွေပါ။ escapse sequence လို့ခေါ်ပါတယ်။ escapse sequence အချို့ကို အောက်မှာ ဖော်ပြပေးပါတယ် -
 
 | Escapse Sequence | Meaning |
 | :--: | -- |
@@ -429,9 +429,9 @@ Hello    World
 
 ```
 
-__String Literals__: တွေက double quote `"` နှစ်ခုကြားမှာရေးရပါတယ်။ string တစ်ခုမှာ plain characters တွေ၊ escapse sequences တွေ၊ universal charactes တွေပါဝင်နိုင်ပါတယ်။ 
+__String Literals__: တွေက double quote `"` နှစ်ခုကြားမှာ ရေးရပါတယ်။ string တစ်ခုမှာ plain characters တွေ၊ escapse sequences တွေ၊ universal charactes တွေပါဝင်နိုင်ပါတယ်။ 
 
-string literals မှာ white space တွေကိုသုံးပြီး စာကြောင်းရှည်တွေကို တစ်ကြောင်းချင်းစီခွဲထုတ်တာတို့လုပ်နိုင်ပါတယ်။
+string literals မှာ white space တွေကိုသုံးပြီး စာကြောင်းရှည်တွေကို တစ်ကြောင်းချင်းစီ ခွဲထုတ်တာတို့ လုပ်နိုင်ပါတယ်။
 
 ``` cpp
 "Hello, dear"
@@ -440,5 +440,109 @@ string literals မှာ white space တွေကိုသုံးပြီး
 dear"
 
 "Hello, " "d" "ear" 
-
 ```
+
+### Defining Constants
+
+constants တွေကို သတ်မှတ်ပေးဖို့ နည်းလမ်း (၂) ခုရှိပါတယ်။
+
+1. `#define` ဆိုတဲ့ preprosser ကို၍သုံး၎င်း
+2. `const` ဆိုတဲ့ keyword ကိုသုံး၍၎င်း
+
+သတ်မှတ်ပေးနိုင်ပါတယ်။
+
+### The #define Processor
+
+အောက်ပါပုံစံကတော့ `#define` preprocessor ကိုသုံးပြီး constant တစ်ခုသတ်မှတ်ပုံပါ။
+
+``` cpp
+#define identifier value
+```
+
+အသုံးပြုပုံ ဥပမာဖြစ်ပါတယ် -
+
+``` cpp
+#include <iostream>
+
+using namespace std;
+
+#define LENGTH 10
+#define WIDTH 5
+#define NEWLINE '\n'
+
+int main()
+{
+   int area;
+
+   area = LENGTH * WIDTH;
+   cout << area;
+   cout << NEWLINE;
+   return 0;
+}
+```
+
+### The const Keyword
+
+သေချာတဲ့ data-type အမျိုးအစားတွေကို ကိန်းသေအဖြစ်သတ်မှာပေးဖို့ `const` prefix ကိုသုံးနိုင်ပါတယ်။ 
+
+``` cpp
+const type variable = value;
+```
+
+Output:
+
+``` 
+50
+```
+
+အသုံးပြုပုံ ဥပမာဖြစ်ပါတယ် -
+
+``` cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   const int LENGTH = 10;
+   const int WIDTH = 5;
+   const int NEWLINE = '\n';
+   int area;
+
+   area = LENGTH * WIDTH;
+   cout << area;
+   cout << NEWLINE;
+   return 0;
+}
+```
+
+Output:
+
+``` 
+50
+```
+
+ဒီလိုမျိုး သတ်မှတ်ပေးလိုက်တဲ့ constat တွေကို  အခြားတန်ဖိုးတစ်ခုနဲ့ assign ထပ်ပြီးတော့ လုပ်ပေးလို့မရတော့ပါဘူး။ 
+
+``` cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   const int LENGTH = 10;
+   const int WIDTH = 5;
+   const int NEWLINE = '\n';
+   int area;
+
+   LENGTH = 20; // Program will show an error in this line.
+
+   area = LENGTH * WIDTH;
+   cout << area;
+   cout << NEWLINE;
+   return 0;
+}
+```
+
+ဒီ program ကို compile လုပ်လိုက်ရင် error ပြမှာပါ။ 
+
+![error](error.png)
